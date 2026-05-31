@@ -1,10 +1,12 @@
 # HaHa Money Privacy Policy
 
+**Effective Date**: May 31, 2026
+
 ### 1. Introduction
 
-HaHa Money ("we", "our", or "the App") is a personal finance tracking application developed by HaHa Studio. This Privacy Policy is designed to transparently explain how we (and more importantly, how we do not) handle your data.
+HaHa Money ("we", "our", or "the App") is a personal finance tracking application developed by HaHa Studio. This Privacy Policy explains what data stays on your device, what limited technical data may be processed when certain platform services are enabled, and what choices you have.
 
-**Core Commitment: Your data belongs to you and only you.**
+**Core Commitment: Your bookkeeping data belongs to you.**
 
 ---
 
@@ -12,57 +14,71 @@ HaHa Money ("we", "our", or "the App") is a personal finance tracking applicatio
 
 **Data Controller**: HaHa Studio  
 **Contact Email**: hahadevstudio@gmail.com  
-**App Type**: Completely offline personal finance management tool
+**App Type**: Local-first personal finance management tool
 
 ---
 
-### 3. Data Collection Statement
+### 3. Data We Process
 
-#### 3.1 What We Collect: Zero
+#### 3.1 Bookkeeping Data Stored Locally
 
-This app **does not collect, transmit, or store** any personal data to any server.
+Your bookkeeping content is stored locally on your device, including:
 
-All data (including but not limited to):
 - Transaction records
 - Category information
 - Account balances
+- Notes and other bookkeeping content
 - App settings and preferences
-- Usage habits
 
-**All stored locally on your device.**
+We do **not** upload your bookkeeping database to our own cloud for sync.
 
-#### 3.2 What We Do Not Do
+#### 3.2 Limited Technical and Usage Data
 
-| Item | Status |
-|------|--------|
-| Upload to cloud | ❌ We don't |
-| Share with third parties | ❌ We don't |
-| Data analytics/tracking | ❌ We don't |
-| Use cookies | ❌ We don't |
-| Collect device information | ❌ We don't |
-| Network communication | ❌ We don't (App runs completely offline) |
+On supported Android builds, the app enables Firebase Analytics and Firebase Crashlytics to help us improve stability and understand product usage. These services may process limited technical and usage data such as:
+
+- App open events
+- App version and device/OS information
+- Crash logs and diagnostic information
+- Feature usage events, such as transaction add/edit/delete, data export, language changes, and currency changes
+- Limited event parameters such as transaction type, category identifier, amount range bucket, selected locale, selected currency, and theme mode
+
+We do **not** intentionally send your full transaction records, notes, or exact transaction amounts to Firebase through these analytics events.
+
+#### 3.3 Third-Party Service Providers
+
+We use Google Firebase as a service provider for analytics and crash reporting on supported Android builds. This means limited technical and usage data may be processed by that provider on our behalf.
+
+We do **not**:
+
+- Sell your bookkeeping data
+- Use advertising SDKs
+- Show ads in the app
+- Upload your bookkeeping records for cloud sync
 
 ---
 
-### 4. App Permissions
+### 4. App Permissions and File Access
 
-This app requests minimal permissions:
+The app requests minimal access.
 
-| Permission | Purpose | Required | Data Destination |
-|------------|---------|----------|------------------|
-| **Storage (Optional)** | Export/import data backup | No | Only saved to local directory of your choice |
+| Access | Purpose | Required | Data Destination |
+|--------|---------|----------|------------------|
+| **File / storage access (optional, platform-dependent)** | Import a backup you choose or export a backup file | No | Local file chosen by you or temporary file shared through the system share sheet |
 
-**You can revoke this permission at any time in system settings without affecting core bookkeeping features.**
+You can deny or revoke optional file access and still use the core bookkeeping features.
 
 ---
 
 ### 5. Data Security
 
-Although data is stored entirely locally, we still implement the following measures:
+We apply the following safeguards:
 
-- **Sandbox Isolation**: App data is stored in the Android system secure sandbox, inaccessible to other apps
-- **Device-Level Protection**: Relies on your device's security mechanisms (screen lock, biometrics, etc.)
-- **No Network Attack Surface**: The app does not connect to the network, fundamentally preventing network attacks
+- **Sandbox isolation**: In-app bookkeeping data is stored in the app sandbox on your device
+- **Device-level protection**: Your device security settings, such as screen lock or biometrics, help protect local data
+- **No cloud sync for bookkeeping records**: Your financial records are not synced to our own backend
+- **Limited telemetry scope**: Analytics and crash reporting are designed to avoid sending full bookkeeping content
+
+No method of storage or transmission is perfectly risk-free, but we aim to minimize data exposure by keeping bookkeeping records local-first.
 
 ---
 
@@ -70,42 +86,41 @@ Although data is stored entirely locally, we still implement the following measu
 
 | Data Type | Storage Location | Deletion Method |
 |-----------|------------------|-----------------|
-| Bookkeeping data | Local SQLite database | Uninstall app or delete in-app |
-| Export backups | Directory you specified | You manually delete files |
-| App settings | Local SharedPreferences | Automatically cleared upon uninstall |
+| Bookkeeping data | Local SQLite database on your device | Delete in-app or uninstall the app |
+| App settings | Local SharedPreferences on your device | Reset in-app or uninstall the app |
+| Exported backup files | Location selected or shared by you | Delete those files manually |
+| Limited analytics / crash diagnostics | Firebase services on supported Android builds | Retained according to the service provider's configuration and policies |
 
-**Complete Deletion**: Uninstalling the app will delete all data.
+Uninstalling the app removes app data stored inside the app sandbox. It does **not** automatically delete backup files you exported outside the app.
 
 ---
 
-### 7. Your Rights (GDPR)
+### 7. Your Rights
 
-Even though we barely process personal data, if you are an EU resident, you still have the following rights:
+Depending on where you live, including if you are in the European Economic Area or United Kingdom, you may have rights such as:
 
-- **Right to be Informed**: This policy provides you with complete information
-- **Right of Access**: View all your data in the app at any time
-- **Right to Rectification**: Modify your bookkeeping records at any time
-- **Right to Erasure (Right to be Forgotten)**: Uninstall the app for complete deletion
-- **Right to Data Portability**: Obtain structured data through the export function
+- The right to be informed
+- The right to access your data
+- The right to correct your data
+- The right to delete your data
+- The right to data portability
+- The right to complain to a supervisory authority
 
-**Exercising Rights**: Email hahadevstudio@gmail.com, and we will respond within 30 days.
+Because HaHa Money does not require an account, your bookkeeping data is primarily under your direct control on your device. You can access, correct, export, or delete that data from within the app or by uninstalling it.
 
-**Right to Complain**: You have the right to complain to the data protection authority in your country.
+To contact us about privacy questions or rights requests, email hahadevstudio@gmail.com. We aim to respond within 30 days.
 
 ---
 
 ### 8. Children's Privacy
 
-This app is **not directed at children under 13**. We do not knowingly collect personal information from children.
+This app is not directed to children under 13, and we do not knowingly collect personal information from children.
 
 ---
 
 ### 9. Policy Updates
 
-We may update this policy. When updated:
-- Display update notification in the app
-- Update the date at the top
-- Provide specific notice for significant changes
+We may update this Privacy Policy from time to time. When we do, we will update the effective date and, where appropriate, provide additional notice in the app.
 
 ---
 
@@ -117,4 +132,3 @@ We may update this policy. When updated:
 ---
 
 **© 2026 HaHa Studio. All rights reserved.**
-**Thank you for trusting HaHa Money with your financial data.**
